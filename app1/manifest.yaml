@@ -41,6 +41,7 @@ kind: Ingress
 metadata:
     name: app1
     annotations:
+      kubernetes.io/ingress.class: alb
       alb.ingress.kubernetes.io/scheme: internet-facing
       alb.ingress.kubernetes.io/target-type: ip
       alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:140023388050:certificate/b4432d3b-f0ab-4cb9-894d-f9ac61bb9895
